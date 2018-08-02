@@ -1,21 +1,17 @@
-/*              
-* AWS connection. 
-*/
-
 provider "aws" {
   region = "eu-central-1"
 }
   
 resource "aws_instance" "test_VM" {
-  ami           = "ami-657bd20a"
+  # Amazon Linux AMI 2017.03.1 (HVM)
+  ami           = "ami-7c4f7097"
   instance_type = "t2.micro"
 
   tags {
     Name = "${var.vm_name}"
-    test1 = "test tag auto12"
   }
 }
 
 variable "vm_name" {
-  description = "Name 123 for VM to be created"
+  description = "Name for VM to be created"
 }
