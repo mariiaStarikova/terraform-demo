@@ -5,7 +5,7 @@ provider "aws" {
 resource "aws_instance" "test_VM" {
   # CentOS Linux 6 x86_64 HVM EBS 1703_01
   ami           = "ami-11a2707e"  
-  instance_type = "t2.nano"
+  instance_type = "t2.micro"
 
   tags {
     Name = "${var.vm_name}"
