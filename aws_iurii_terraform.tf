@@ -3,8 +3,8 @@ provider "aws" {
 }
   
 resource "aws_instance" "test_VM" {
-  # CentOS Linux 6 x86_64 HVM EBS 1703_0111
-  ami           = "ami-11a2707e"
+  # CentOS Linux 6 x86_64 HVM EBS 1703_02
+  ami           = "ami-11a2707e"  
   instance_type = "t2.nano"
 
   tags {
