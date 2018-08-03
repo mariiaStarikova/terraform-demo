@@ -3,8 +3,8 @@ provider "aws" {
 }
   
 resource "aws_instance" "test_VM" {
-  # Amazon Linux AMI 2017.03.1 (HVM)
-  ami           = "ami-7c4f7097"
+  # CentOS Linux 6 x86_64 HVM EBS 1703_01
+  ami           = "ami-11a2707e"
   instance_type = "t2.nano"
 
   tags {
