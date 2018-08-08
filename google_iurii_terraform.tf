@@ -1,6 +1,6 @@
 // Configure the Google Cloud provider
 provider "google" {
-  region      = "us-central1"
+  region      = "us-central1"1
 }
 
 // Create a new instance
