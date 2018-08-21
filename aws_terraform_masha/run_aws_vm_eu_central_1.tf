@@ -13,6 +13,5 @@ resource "aws_instance" "test_VM" {
 }
 
 variable "vm_name" {
-  default = "m3testfromgit"
   description = "Name for VM to be created"
 }
