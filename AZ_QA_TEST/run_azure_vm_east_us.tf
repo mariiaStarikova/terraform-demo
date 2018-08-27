@@ -150,7 +150,7 @@ resource "azurerm_virtual_machine" "myterraformvm" {
     }
 
     tags {
-        Name = "${vm_name}"
+        Name = "${var.vm_name}"
         environment = "Terraform Demo"
     }
 }
