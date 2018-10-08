@@ -1,4 +1,4 @@
-variable "resourcename" {1
+variable "resourcename" {
   default = "terraformResourceGroup"
 }
 
