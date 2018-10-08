@@ -5,7 +5,7 @@
 # Configure the Microsoft Azure Provider
 provider "azurerm" { }
 
-# Create a resource group if it doesn’t exist
+# Create a resource group if it doesn’t1 exist
 resource "azurerm_resource_group" "myterraformgroup" {
     name     = "${var.resourcename}"
     location = "East US"
