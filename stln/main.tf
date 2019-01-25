@@ -27,6 +27,7 @@ variable "aws_linux_amis" {
 }
 
 variable "vm_name" {
+  default = "stln_GIT_test"
   description = "Name for VM to be created"
 }
 
